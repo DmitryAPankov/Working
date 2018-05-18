@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d69116fb-d513-4fc8-8a97-c3f1419b2abe">
+  <producedTypes>
+    <objectType typeId="374209e5-c393-4fe4-aafc-907cf21be762" valueTypeId="916c74d6-cdbc-4143-bc94-2772d55b23a3"/>
+    <managerType typeId="f2a7863d-cb0b-44c2-bb6d-959030c2c91a" valueTypeId="fff7bac2-9019-4cab-8c91-fb0c98f9331a"/>
+  </producedTypes>
+  <name>РазвернутоеСальдо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Развернутое сальдо</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РазвернутоеСальдо.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="af53d4f2-bfb3-4adb-a343-c277ff886238">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b264183-465d-4adc-8874-1e657ea3bfa4">
+  <producedTypes>
+    <objectType typeId="6048846e-01b2-4da5-970b-667c132505f5" valueTypeId="d1ac406c-c4d3-4707-837a-f5c5a61fde7b"/>
+    <managerType typeId="97291922-e53e-4417-8d48-4ffdd973c572" valueTypeId="d0f24f97-c321-49b4-9836-5507e82abd2e"/>
+  </producedTypes>
+  <name>Шахматка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шахматка</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Шахматка.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c8ceff3c-6388-4af7-a4fb-f66e915f7907">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

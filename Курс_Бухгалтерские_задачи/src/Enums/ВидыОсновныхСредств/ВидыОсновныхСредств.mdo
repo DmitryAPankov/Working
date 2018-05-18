@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8596be36-b7ba-41a2-8185-1004d26d8483">
+  <producedTypes>
+    <refType typeId="e743d1cd-2081-4dff-a3f5-65f93edde082" valueTypeId="4fc78f13-c1f9-4cc2-8a85-dfacbc7450b6"/>
+    <listType typeId="3d0da03f-85ba-4f44-9052-5613b0a079eb" valueTypeId="c1cd4438-b7e5-4bb3-ae5c-146d5951fcec"/>
+    <managerType typeId="ecffd6b0-a8e6-4f05-a095-b6abca9bb476" valueTypeId="8ca43892-ef1c-4913-bbc9-f2f882998eee"/>
+  </producedTypes>
+  <name>ВидыОсновныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды основных средств</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="150ecbb6-4306-464c-8d91-a47493ea9e4f">
+    <name>Транспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспорт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2a848495-57a7-4ddd-8b74-a5322bba65b6">
+    <name>МашиныИОборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Машины и оборудование</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="16ca6ef5-e93c-4ad3-a7db-12f6a5d2cea6">
+    <name>ПрочееОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее ОС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

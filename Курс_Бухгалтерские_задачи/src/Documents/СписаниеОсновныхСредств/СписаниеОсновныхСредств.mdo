@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6daca27-7b58-45df-95e7-c2df8cbde129">
+  <producedTypes>
+    <objectType typeId="60ab2ce0-9f66-4010-850e-41e5a0cd8d2d" valueTypeId="60d5431d-7819-427a-9a0c-42677c091ae6"/>
+    <refType typeId="9257d965-0515-412c-a346-20b30be163fb" valueTypeId="47f50ff0-da94-4597-a5cc-b453853cb700"/>
+    <selectionType typeId="8074229f-a1cf-4a9f-858a-a634268bdfd6" valueTypeId="5d8fdc54-9e93-469e-bf16-c0c2793217c3"/>
+    <listType typeId="93110a45-6e9e-4db5-a3d7-da51cb92b9d6" valueTypeId="b2b84397-b552-4072-a348-74f105d9deb6"/>
+    <managerType typeId="528b6dc6-4eda-44cf-9542-0aa443b835e0" valueTypeId="64381638-7242-46a9-9fba-bd5ee5310730"/>
+  </producedTypes>
+  <name>СписаниеОсновныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списание основных средств</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СписаниеОсновныхСредств.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СписаниеОсновныхСредств.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.СвойстваОсновныхСредств</registerRecords>
+  <registerRecords>AccountingRegister.Проводки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="161d9eb4-5e2c-4aae-a052-b9103cb0994c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f407eee7-7e66-4abc-b7c1-ecbbb5d30ab1">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.СписаниеОсновныхСредств.Attribute.Организация</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c79d1588-8b09-47c1-b7cd-be73268c6ab0">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="57e195aa-9a3b-40a6-a2d7-06acd29a83e1">
+    <producedTypes>
+      <objectType typeId="289ab76e-7470-4e8f-9095-561e0fca006b" valueTypeId="008a8b4d-2a78-433b-88a0-80eedbda5c52"/>
+      <rowType typeId="a3213934-c8a3-425d-bb29-35b1c2813ed2" valueTypeId="304dde43-83ef-40e9-b3df-a7188b61554f"/>
+    </producedTypes>
+    <name>ОсновныеСредства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные средства</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="67a5ca0a-8d10-4a76-983e-31df8c7705da">
+      <name>ОсновноеСредство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основное средство</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac973e96-4bbd-411d-8db4-e6488a368cf1">
+  <producedTypes>
+    <objectType typeId="a1820564-c57c-4751-bea2-28d0f7dd5788" valueTypeId="8e6e06f2-a97c-4746-8c4f-be5d4f7686fd"/>
+    <refType typeId="cf959586-30ce-4b06-a8a9-755cee702fd4" valueTypeId="0eed0728-d913-4340-b49b-88bd89f004fa"/>
+    <selectionType typeId="b143808a-4dc5-4864-b78b-0c9e1babeaed" valueTypeId="5e59e657-63ce-4bda-8e51-c721bb97fcf8"/>
+    <listType typeId="50aa752a-711f-49d5-8c5a-05c91deb782f" valueTypeId="fc77a69b-72ba-4342-86eb-6409b9c5224f"/>
+    <managerType typeId="063fceb3-4534-4961-a1cd-fffa08c6c20f" valueTypeId="eb41cfea-8067-4e50-8bd4-648b45ff96ca"/>
+  </producedTypes>
+  <name>ПриобретениеОсновныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приобретение основных средств</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриобретениеОсновныхСредств.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриобретениеОсновныхСредств.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>AccountingRegister.Проводки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1e0c7942-a661-4a9b-8df0-980593bc7dbe">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39e4ec89-3f36-46b5-94d5-13039bde6221">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a155eab-6826-45a8-b8b5-c1efdab4a037">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1cdb230e-0133-4acc-a89a-64981be16098">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Договоры</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Document.ПриобретениеОсновныхСредств.Attribute.Поставщик</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="047702e8-8022-4ab6-ba90-45fbfcf5eb38">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="e4518007-0fb7-4a5d-94a6-8a9fc9767647">
+    <producedTypes>
+      <objectType typeId="cee39cfd-6ab6-49d0-bacb-c1903a7acf2b" valueTypeId="8a2ca993-7062-4a90-8730-f3100f220523"/>
+      <rowType typeId="31ce45a4-e4dc-4a6c-97e2-47876487593a" valueTypeId="978874f3-9289-4386-bb12-1cf0fef255b1"/>
+    </producedTypes>
+    <name>ОсновныеСредства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные средства</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="e2b39774-a5ef-48cd-b192-8d5abef8455a">
+      <name>ОсновноеСредство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Основное средство</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ОсновныеСредства</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a7534263-6bd0-427c-882a-168a2bbb12a4">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

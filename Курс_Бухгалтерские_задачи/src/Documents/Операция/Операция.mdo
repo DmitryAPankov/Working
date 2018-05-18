@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b772836d-1080-4b53-928b-5cfb57e32f86">
+  <producedTypes>
+    <objectType typeId="9f18fd82-b732-4e2b-8ff2-6d43e8d91fe8" valueTypeId="b81c481d-9a1a-41cd-b8dd-f9679b4c3ce4"/>
+    <refType typeId="471175e5-4e0c-4e47-8212-69e9333aaa62" valueTypeId="14a18e12-972f-4d7b-8e5c-1485d64254ca"/>
+    <selectionType typeId="65355081-cffe-4f79-80a4-bd4f5e169276" valueTypeId="368d5992-146d-48c6-9e38-ffb50f1183dc"/>
+    <listType typeId="60691e14-918f-446d-88ab-d3e2a110d6f7" valueTypeId="0354abaa-b12c-4811-9b1b-b0c53178af12"/>
+    <managerType typeId="f601c626-365d-43ef-9d76-17fbc3303fc5" valueTypeId="73215ae2-0cd4-45de-abe8-5f0471bd775c"/>
+  </producedTypes>
+  <name>Операция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операция</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.Операция.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Операции</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Операции ручные</value>
+  </extendedListPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.Операция.Form.ФормаДокумента</defaultObjectForm>
+  <posting>Deny</posting>
+  <registerRecords>AccountingRegister.Проводки</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e6b9c090-eeb1-4eae-a1a6-eda3a0c3cf2f">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ab213b5d-bdc8-446d-a657-62f2743eb58f">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ВИностраннойВалюте</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В иностранной валюте</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldFolder">
+			<dataPath>ВВалютеУчета</dataPath>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В валюте учета</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Счет</dataPath>
+			<field>Счет</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.Валютный</dcscor:choiceParameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВалютеУчета.СуммаНачальныйОстаток</dataPath>
+			<field>СуммаНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Сумма</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВалютеУчета.СуммаКонечныйОстаток</dataPath>
+			<field>СуммаКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Сумма</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто2</dataPath>
+			<field>Субконто2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВИностраннойВалюте.ВалютнаяСуммаНачальныйОстаток</dataPath>
+			<field>ВалютнаяСуммаНачальныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>ВалютнаяСумма</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВалютеУчета.СуммаОборотДт</dataPath>
+			<field>СуммаОборотДт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВалютеУчета.СуммаОборотКт</dataPath>
+			<field>СуммаОборотКт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВИностраннойВалюте.ВалютнаяСуммаОборотДт</dataPath>
+			<field>ВалютнаяСуммаОборотДт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВИностраннойВалюте.ВалютнаяСуммаОборотКт</dataPath>
+			<field>ВалютнаяСуммаОборотКт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВИностраннойВалюте.ВалютнаяСуммаКонечныйОстаток</dataPath>
+			<field>ВалютнаяСуммаКонечныйОстаток</field>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>ВалютнаяСумма</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Субконто1</dataPath>
+			<field>Субконто1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПроводкиОстаткиИОбороты.Счет,
+	ПроводкиОстаткиИОбороты.Организация,
+	ПроводкиОстаткиИОбороты.Валюта,
+	ПроводкиОстаткиИОбороты.СуммаНачальныйОстаток,
+	ПроводкиОстаткиИОбороты.СуммаОборотДт,
+	ПроводкиОстаткиИОбороты.СуммаОборотКт,
+	ПроводкиОстаткиИОбороты.СуммаКонечныйОстаток,
+	ПроводкиОстаткиИОбороты.ВалютнаяСуммаНачальныйОстаток,
+	ПроводкиОстаткиИОбороты.ВалютнаяСуммаОборотДт,
+	ПроводкиОстаткиИОбороты.ВалютнаяСуммаОборотКт,
+	ПроводкиОстаткиИОбороты.ВалютнаяСуммаКонечныйОстаток
+ИЗ
+	РегистрБухгалтерии.Проводки.ОстаткиИОбороты(, , , , Счет.Валютный, , ) КАК ПроводкиОстаткиИОбороты</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ВВалютеУчета.СуммаКонечныйОстаток</dataPath>
+		<expression>Сумма(ВВалютеУчета.СуммаКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВВалютеУчета.СуммаНачальныйОстаток</dataPath>
+		<expression>Сумма(ВВалютеУчета.СуммаНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВВалютеУчета.СуммаОборотДт</dataPath>
+		<expression>Сумма(ВВалютеУчета.СуммаОборотДт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВВалютеУчета.СуммаОборотКт</dataPath>
+		<expression>Сумма(ВВалютеУчета.СуммаОборотКт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВИностраннойВалюте.ВалютнаяСуммаКонечныйОстаток</dataPath>
+		<expression>Сумма(ВИностраннойВалюте.ВалютнаяСуммаКонечныйОстаток)</expression>
+		<group>Валюта</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВИностраннойВалюте.ВалютнаяСуммаНачальныйОстаток</dataPath>
+		<expression>Сумма(ВИностраннойВалюте.ВалютнаяСуммаНачальныйОстаток)</expression>
+		<group>Валюта</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВИностраннойВалюте.ВалютнаяСуммаОборотДт</dataPath>
+		<expression>Сумма(ВИностраннойВалюте.ВалютнаяСуммаОборотДт)</expression>
+		<group>Валюта</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВИностраннойВалюте.ВалютнаяСуммаОборотКт</dataPath>
+		<expression>Сумма(ВИностраннойВалюте.ВалютнаяСуммаОборотКт)</expression>
+		<group>Валюта</group>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Валюта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>ВИностраннойВалюте</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВИностраннойВалюте.ВалютнаяСуммаНачальныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Начальный остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВИностраннойВалюте.ВалютнаяСуммаОборотДт</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поступление</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВИностраннойВалюте.ВалютнаяСуммаОборотКт</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Списание</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВИностраннойВалюте.ВалютнаяСуммаКонечныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конечный остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:field>ВВалютеУчета</dcsset:field>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВВалютеУчета.СуммаНачальныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Начальный остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВВалютеУчета.СуммаОборотДт</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поступление</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВВалютеУчета.СуммаОборотКт</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Списание</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВВалютеУчета.СуммаКонечныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конечный остаток</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:userSettingID>0f82035e-f603-41cc-945c-afe9e929284d</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>aa11873e-32ab-4567-b9e8-70cdc8a096af</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:userSettingID>311fcc7f-4a81-40d8-b3e0-09ee398e70bc</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:userSettingID>445c2478-4757-425d-960c-6b4dba89e065</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОСВ по валютам</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Валюта</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>433c660e-52b4-4845-882e-e4bd64cf86e2</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
