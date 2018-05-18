@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e466d22-a134-404c-8104-f8b3c8c4e2bc">
+  <producedTypes>
+    <objectType typeId="c6bbad40-c722-4b7a-b812-f445d8018505" valueTypeId="097b0ecf-7876-4325-bed6-d896a3ec5215"/>
+    <managerType typeId="6e46be12-3a8a-4fa9-bec5-ad6e78bd3d82" valueTypeId="2ee2f2e5-3c7e-4d52-86f4-a3cf93304da2"/>
+  </producedTypes>
+  <name>Перерасчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перерасчет</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Перерасчет.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d1c339b6-642a-4629-b907-42ddc3d6f27a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

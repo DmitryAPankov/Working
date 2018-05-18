@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fc4275a-1fd0-4d8b-8ca7-6091f7452b64">
+  <producedTypes>
+    <managerType typeId="71ad0724-076e-4694-8040-1f920698ed98" valueTypeId="7a375a11-1573-4538-8039-87c7253bbeaf"/>
+    <valueManagerType typeId="89455c32-3aa6-4cdd-888d-2d7523965b6c" valueTypeId="90355b62-1f91-4f05-b677-5f95ef766ed9"/>
+  </producedTypes>
+  <name>СуммаШтрафа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сумма штрафа</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

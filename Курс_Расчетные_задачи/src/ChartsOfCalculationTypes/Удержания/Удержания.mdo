@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cd982f6-6582-40a7-a4f0-f2cc24dcc0f2">
+  <producedTypes>
+    <objectType typeId="eda0dbc6-3f75-48e5-a392-05f6c88b0792" valueTypeId="756726d8-771a-449a-b5be-6a6e8065469b"/>
+    <refType typeId="fef7793b-4877-431a-a75b-0304489bcafd" valueTypeId="f3311aa3-3f19-4e21-995a-b5b5559fbdae"/>
+    <selectionType typeId="66fef969-b1c4-4770-8ed0-3ebfdc7c35b4" valueTypeId="2efd0f23-b552-4da5-aeb1-cab1b25f814e"/>
+    <listType typeId="6973f48f-e18e-4376-920f-e088cf93e4d2" valueTypeId="7d31d553-2651-4fbb-81a4-d93a25b32612"/>
+    <managerType typeId="42f196dd-b4ed-485d-be3c-453177efd101" valueTypeId="70dbf3d3-4db7-40c0-aad9-15fdae5e6fec"/>
+    <displacingCalculationTypesType typeId="e5d6728a-b373-4719-af41-fbbc1f83f8bb" valueTypeId="1d71a10b-9808-49d8-b9a8-4d0e46036127"/>
+    <displacingCalculationTypesRowType typeId="271553f2-bbc8-44df-b343-16f8383c8f4f" valueTypeId="9de42861-0ecb-450b-9a5d-e742bd4bcc3a"/>
+    <baseCalculationTypesType typeId="1d602565-4df0-41b9-b618-52436d8808bc" valueTypeId="9e1d3f64-ff9e-481a-b402-7fa7ac4174bd"/>
+    <baseCalculationTypesRowType typeId="ffc990a1-8dea-400d-acb6-45c9cb8e36b3" valueTypeId="8ccd5ac9-cd10-47ac-a0e2-7cd76e9d3f8b"/>
+    <leadingCalculationTypesType typeId="34738b5b-49af-4b73-be22-a371d2ce6ccf" valueTypeId="182f5ef0-694b-4d35-8c0c-a696ca73ec40"/>
+    <leadingCalculationTypesRowType typeId="4b689a67-102f-4a73-be5d-ed1c690c10c3" valueTypeId="3fa37185-c2d9-48e1-8bda-d12c101775b1"/>
+  </producedTypes>
+  <name>Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>5</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Премии</baseCalculationTypes>
+  <attributes uuid="f2ebe451-aef9-4c33-b640-2f72ed5ee3f2">
+    <name>СпособРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СпособыРасчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="adb29816-0fdf-4786-865d-9bcc71722511">
+    <name>КатегорияРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория расчета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииРасчета</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+</mdclass:ChartOfCalculationTypes>
