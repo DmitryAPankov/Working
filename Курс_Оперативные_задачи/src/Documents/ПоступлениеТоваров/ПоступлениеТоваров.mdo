@@ -2,7 +2,9 @@
 <mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42e6dfa5-71e4-4daf-bebf-d0edb733f144">
   <producedTypes>
     <objectType typeId="1db38902-0d39-4eb1-94dc-6f667ff50a15" valueTypeId="e27a354d-0ec0-42a6-9172-679452c7a779"/>
-    <refType typeId="c1fef721-1988-4427-b444-21c96bcabef7" valueTypeId="baeeef40-cec6-4e4d-8802-b05b5ff069fc"/>
+    <refType typeId="c1fef721-1988-4427-b444-21c96bcabef7" valueTypeId="baeeef40-cec6-4e4d-8802-b05b5ff069fc">
+      <emptyRef/>
+    </refType>
     <selectionType typeId="8bc39892-571c-4692-859a-ed8b52c6e763" valueTypeId="4f840b9d-5fd9-4dc1-b2ad-2068da102946"/>
     <listType typeId="fd4387a4-e364-41e4-ac84-b2e742ca5dee" valueTypeId="a969a51f-0ba4-47e7-8280-9a8ede41f50c"/>
     <managerType typeId="a8550581-bc39-46b6-9099-a5426ab6a726" valueTypeId="6be802ff-d823-40a9-b763-1bd53e81f0cf"/>
@@ -43,6 +45,7 @@
   <defaultObjectForm>Document.ПоступлениеТоваров.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>InformationRegister.ЦеныПоставщиков</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиНоменклатуры</registerRecords>
+  <registerRecords>AccumulationRegister.Задолженности</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="9b9048b6-85e9-45c3-97a3-2faeeac95891">

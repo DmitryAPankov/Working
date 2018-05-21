@@ -82,6 +82,7 @@
   <informationRegisters>InformationRegister.СведенияПоАдресации</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиНоменклатуры</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Задолженности</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеСвойства</chartsOfCharacteristicTypes>
   <tasks>Task.Задача</tasks>
 </mdclass:Configuration>

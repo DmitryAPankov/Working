@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4947f6e3-124e-412c-a503-5b79e1f101ab">
+  <producedTypes>
+    <selectionType typeId="805d7645-d828-48e5-b135-5d5bd360e7e8" valueTypeId="f57dbf4e-1c68-431f-9118-f6f98a23a47d"/>
+    <listType typeId="ae1f52f8-3731-4070-8a3b-9b378dd97882" valueTypeId="5e567a4b-055e-4c81-9a1e-48789b49304e"/>
+    <managerType typeId="b59f7dd1-a142-4774-bec2-a3a6b8af2fd6" valueTypeId="544e0588-75c8-4959-a5a3-18939b79efb4"/>
+    <recordSetType typeId="e88fd420-6354-4220-bad4-3e982bf27dab" valueTypeId="854761bd-5610-4638-a660-ffa3d6c55b08"/>
+    <recordKeyType typeId="41936b2d-c2ec-429d-a125-4c3f6dc748ab" valueTypeId="a669a2ae-b85a-4e47-8a48-5d21b879f555"/>
+    <recordType typeId="14a9a4ca-05d6-40b8-a18e-5a69ad23aa02" valueTypeId="6c51da4f-603f-4ade-bb08-bfce4eed954e"/>
+  </producedTypes>
+  <name>Задолженности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задолженности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1e4a1762-e297-41db-82a8-7ad5ee0979e1">
+    <name>СуммаДолга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма долга</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="c06457ac-43ce-45f7-b9c8-a69e018b0bf4">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>
