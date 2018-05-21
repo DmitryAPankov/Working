@@ -9,5 +9,6 @@
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.ПоступлениеТоваров</content>
   <content>3cc20233-8b58-4ab3-bc28-8eb86fb921dc</content>
+  <content>Document.ПриходныйКассовыйОрдер</content>
   <parentSubsystem>Subsystem.Закупки</parentSubsystem>
 </mdclass:Subsystem>

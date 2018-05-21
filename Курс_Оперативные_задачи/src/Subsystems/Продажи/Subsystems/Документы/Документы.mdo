@@ -10,5 +10,6 @@
   <content>Document.ПродажаТоваров</content>
   <content>3cc20233-8b58-4ab3-bc28-8eb86fb921dc</content>
   <content>299951de-830c-4e6f-ab49-eb6fe255e1b1</content>
+  <content>Document.ПриходныйКассовыйОрдер</content>
   <parentSubsystem>Subsystem.Продажи</parentSubsystem>
 </mdclass:Subsystem>
