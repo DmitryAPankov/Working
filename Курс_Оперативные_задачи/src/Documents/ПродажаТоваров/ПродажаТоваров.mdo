@@ -2,9 +2,7 @@
 <mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db872473-4bb3-4f39-907a-5e932a8e428e">
   <producedTypes>
     <objectType typeId="10b9d969-7925-40c8-8b78-47847cd2fc80" valueTypeId="39c66680-c08c-41f6-ba2e-99ef9f3f55ef"/>
-    <refType typeId="67cb80b6-2897-47c0-9d0d-15ad898108de" valueTypeId="9c56c7a1-9381-4487-8f65-4946fc470aab">
-      <emptyRef/>
-    </refType>
+    <refType typeId="67cb80b6-2897-47c0-9d0d-15ad898108de" valueTypeId="9c56c7a1-9381-4487-8f65-4946fc470aab"/>
     <selectionType typeId="7c7752ad-9b62-402b-8ab8-aac3af439038" valueTypeId="d05905a1-121c-456e-aaaa-a39789e7eda0"/>
     <listType typeId="b20ff3e0-f745-402e-8605-aaf18ea499d6" valueTypeId="b23752d7-4d62-4b8d-b08a-6db60882c5af"/>
     <managerType typeId="eae0c7cd-870b-47c0-9bcb-95b8f4ca9b59" valueTypeId="fe007537-f29d-4e9b-b076-4e25557ab9a5"/>
@@ -94,9 +92,9 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПродажаТоваров.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.Задолженности</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиНоменклатуры</registerRecords>
-  <registerRecords>AccumulationRegister.Задолженности</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="cb0b1f9f-71ae-4738-b14e-d94739e28a74">
