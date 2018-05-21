@@ -72,6 +72,7 @@
   <documents>Document.ПродажаТоваров</documents>
   <documents>Document.ПланированиеОказанияУслуг</documents>
   <documents>Document.ОказаниеУслугСервисМенеджером</documents>
+  <documents>Document.ПриходныйКассовыйОрдер</documents>
   <documentJournals>DocumentJournal.СкладскиеДокументы</documentJournals>
   <enums>Enum.ВидыТоваров</enums>
   <dataProcessors>DataProcessor.ЗнакомствоСЗапросом</dataProcessors>
